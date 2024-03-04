@@ -1,0 +1,64 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Custom Functions",
+  "steps": [
+    {
+      "file": "sketch.js",
+      "selection": {
+        "start": {
+          "line": 27,
+          "character": 1
+        },
+        "end": {
+          "line": 59,
+          "character": 2
+        }
+      },
+      "description": "## Custom Functions: The Why\n\nThis is the `drawCoordinateSystem()` function. Before I defined it here, it didn't exist! The code inside the *function body* (i.e. the code between the `{` and `}`) was up in the `draw()` function before I moved it down here. It works the same in either location, so why go to the trouble of defining this new function? Well, I wanted the code in my `draw()` function to be a little easier to follow! Let's look.",
+      "title": "Custom Functions: The Why (Part 1)"
+    },
+    {
+      "file": "sketch.js",
+      "selection": {
+        "start": {
+          "line": 13,
+          "character": 1
+        },
+        "end": {
+          "line": 14,
+          "character": 26
+        }
+      },
+      "description": "## Custom Functions: The Why (Part 2)\n\nBefore creating the `drawCoordinateSystem()` function, all the code that is now inside that function was right here. I could have added some fancy code comments to create some visual indicators of what this code was doing, but it's much easier to just read `drawCoordinateSystem()` and understand what that line of code is doing. This covers the first two out of my three reasons for creating your own function:\n\n1. You want to make your code more readable and easier to understand.\n2. You want to organize your code better by grouping related code into a single function.\n3. You find yourself writing the same code multiple times.\n\n"
+    },
+    {
+      "file": "sketch.js",
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 4
+        },
+        "end": {
+          "line": 1,
+          "character": 40
+        }
+      },
+      "description": "## Recipe for Custom Functions (Part 1)\n\nTo \"define\" a custom function, you need five things:\n\n1. The `function` keyword, followed by\n2. The function's name, followed by\n3. A pair of parentheses `()` (with function parameters inside, if you are using them—more on these in a future class), followed by:\n4. A pair of braces `{}` \n5. The function body (i.e. the code that you want to run when the function is \"called\")",
+      "title": "Recipe for Custom Functions (Part 1)"
+    },
+    {
+      "file": "sketch.js",
+      "selection": {
+        "start": {
+          "line": 14,
+          "character": 3
+        },
+        "end": {
+          "line": 14,
+          "character": 26
+        }
+      },
+      "description": "## Recipe for Custom Functions (Part 2)\n\nThe last thing to do—the step that actually causes the code inside the \"function body\" to run—is to call the function. Like a magic spell, you just need to say (in this case, type) the function's name! If the function is expecting any arguments, you should include those too. \"Arguments\" are the values that you \"pass\" into functions like `circle`, `rect`, `color` and many others, and are separated by commas. Functions are not required to have these!"
+    }
+  ]
+}
